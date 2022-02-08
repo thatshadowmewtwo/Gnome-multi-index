@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: grey;}
+h1 {color: darkred;}
+p{color: darkgreen;}
+button {background-color: black;}
+button {color: white}
+</style>
+<script>
+  var h = 10
+  var g = 10 
+  function attack() {document.getElementById(1) .innerHTML = "you attack", g = g-1, h = h-1};
+  function heal() {document.getElementById(1) .innerHTML = "you heal"};
+  function heal() {h = h+1};
+  setInterval( function gameover() {
+    if (h === 0) {document.getElementById(2) .innerHTML = "Status:dead"}
+  }, 10);
+  setInterval( function youwin() {
+    if (g === 0) {document.getElementById(2) .innerHTML = "YOUWIN CONGRATS"}
+  }, 10);
+</script>
+</head>
+<body>
+<title>"gnome"</title>
+<h1>Gnome Game!</h1>
+<p> A Gnome attacks you</p>
+<p id=2> </p>
+<p id=1> What do you do</p>
+<button onclick="attack()">attack</button>
+<button onclick="heal()">heal</button>
+<p></p>
+<a href="index2.html">scam</a>
+<p></p>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">DO NOT OPEN IN A NEW TAB</a>
+</body>
+</html>
